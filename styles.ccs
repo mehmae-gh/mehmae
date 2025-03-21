@@ -1,69 +1,74 @@
+/* General Body Styling */
 body {
+    background-color: #b497bd; /* Muted purple background */
+    color: #8a1d1d; /* Blood red text */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+    background-color: #8a1d1d; /* Blood red header */
+    padding: 10px 0;
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-section {
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Styling for the Gallery Section */
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
+    margin-top: 20px;
 }
 
-.bio, .gallery-preview, .gallery, .contact {
-    max-width: 1200px;
-    margin: 0 auto;
+.artwork {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+.artwork h3 {
+    font-size: 1.2em;
+    color: #8a1d1d; /* Blood red text */
+    font-weight: bold;
 }
 
-.gallery-item img {
+/* Image Styling */
+.gallery-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
+.gallery-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Styling for Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 5px 15px;
-    color: #333;
-    text-decoration: none;
-    font-size: 18px;
-}
+    background-color: #8a1d1d; /* Blood red footer */
+   
