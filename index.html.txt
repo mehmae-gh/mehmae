@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bio">
+        <h1>Welcome to My Art Gallery</h1>
+        <p>I'm [Your Name], an artist who loves to explore [Your Style/Theme]. Here you can explore my latest works and learn more about me.</p>
+    </section>
+
+    <section class="featured-image">
+        <h2>Newest Artwork</h2>
+        <img src="images/most_recent_art.jpg" alt="Most Recent Artwork">
+    </section>
+
+    <section class="gallery-preview">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Repeat this block for each piece in your gallery -->
+            <div class="gallery-item">
+                <img src="images/art1.jpg" alt="Artwork 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/art2.jpg" alt="Artwork 2">
+            </div>
+            <!-- Add more pieces as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 [Your Name]</p>
+    </footer>
+</body>
+</html>
